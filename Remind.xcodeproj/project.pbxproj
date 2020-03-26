@@ -13,6 +13,9 @@
 		E2A95F07237F72AC00C9D921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A95F05237F72AC00C9D921 /* Main.storyboard */; };
 		E2A95F09237F72AE00C9D921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A95F08237F72AE00C9D921 /* Assets.xcassets */; };
 		E2A95F0C237F72AE00C9D921 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A95F0A237F72AE00C9D921 /* LaunchScreen.storyboard */; };
+		E2A95F18237F742B00C9D921 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A95F17237F742B00C9D921 /* ShadowView.swift */; };
+		E2D3716623801C0300817AEA /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3716523801C0300817AEA /* UNService.swift */; };
+		E2D37168238092C100817AEA /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D37167238092C100817AEA /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E2A95F08237F72AE00C9D921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A95F0B237F72AE00C9D921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2A95F0D237F72AE00C9D921 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A95F17237F742B00C9D921 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		E2D3716523801C0300817AEA /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
+		E2D37167238092C100817AEA /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		E2A95EFE237F72AC00C9D921 /* Remind */ = {
 			isa = PBXGroup;
 			children = (
+				E2A95F0D237F72AE00C9D921 /* Info.plist */,
+				E2A95F16237F730C00C9D921 /* Model */,
+				E2A95F15237F730300C9D921 /* View */,
+				E2A95F14237F72FA00C9D921 /* Controller */,
+				E2A95F13237F72EC00C9D921 /* Service */,
+			);
+			path = Remind;
+			sourceTree = "<group>";
+		};
+		E2A95F13237F72EC00C9D921 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E2D3716523801C0300817AEA /* UNService.swift */,
+				E2D37167238092C100817AEA /* AlertService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E2A95F14237F72FA00C9D921 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				E2A95EFF237F72AC00C9D921 /* AppDelegate.swift */,
 				E2A95F01237F72AC00C9D921 /* SceneDelegate.swift */,
 				E2A95F03237F72AC00C9D921 /* ViewController.swift */,
-				E2A95F05237F72AC00C9D921 /* Main.storyboard */,
-				E2A95F08237F72AE00C9D921 /* Assets.xcassets */,
-				E2A95F0A237F72AE00C9D921 /* LaunchScreen.storyboard */,
-				E2A95F0D237F72AE00C9D921 /* Info.plist */,
 			);
-			path = Remind;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2A95F15237F730300C9D921 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2A95F05237F72AC00C9D921 /* Main.storyboard */,
+				E2A95F0A237F72AE00C9D921 /* LaunchScreen.storyboard */,
+				E2A95F08237F72AE00C9D921 /* Assets.xcassets */,
+				E2A95F17237F742B00C9D921 /* ShadowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2A95F16237F730C00C9D921 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A95F18237F742B00C9D921 /* ShadowView.swift in Sources */,
 				E2A95F04237F72AC00C9D921 /* ViewController.swift in Sources */,
 				E2A95F00237F72AC00C9D921 /* AppDelegate.swift in Sources */,
 				E2A95F02237F72AC00C9D921 /* SceneDelegate.swift in Sources */,
+				E2D37168238092C100817AEA /* AlertService.swift in Sources */,
+				E2D3716623801C0300817AEA /* UNService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
